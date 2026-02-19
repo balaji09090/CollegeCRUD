@@ -102,6 +102,7 @@ public class HoDDtoRequest {
 		temp.setEmail(h.getEmail());
 		temp.setDept(h.getDept());
 		temp.setRole("HoD");
+		temp.setUsername(h.getUsername()+h.getRole());
 		return temp;
 		
 	}
