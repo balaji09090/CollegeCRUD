@@ -3,6 +3,7 @@ package com.example.demo.controller;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -17,6 +18,7 @@ import com.example.demo.dto.StudentDtoResponse;
 import com.example.demo.model.Student;
 import com.example.demo.service.StudentService;
 
+@CrossOrigin(origins = "http://localhost:5173")
 @RestController
 @RequestMapping("student")
 public class StudentController {
